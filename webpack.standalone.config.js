@@ -16,7 +16,7 @@ module.exports = {
         loader: 'babel',
         query: {
           cacheDirectory: true,
-          presets: ["stage-1", "es2015", "react"],
+          presets: ["stage-1", "env", "react"],
           plugins: ["add-module-exports"]
         }
       }, {
@@ -51,9 +51,9 @@ module.exports = {
     plugins: [
       new webpack.optimize.UglifyJsPlugin()
     ]
-  },
-  externals: {
-    react: 'React',
-    'react-dom': "ReactDOM"
   }
+  // externals: {
+  //   react: 'React',
+  //   'react-dom': "ReactDOM"
+  // }
 };

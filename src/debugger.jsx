@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-import emitter from "./emitter";
-import {canUseDOM} from 'fbjs/lib/ExecutionEnvironment';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import emitter from "./emitter"
+import {canUseDOM} from 'fbjs/lib/ExecutionEnvironment'
 
 if(process.env.NODE_ENV === "production" || !canUseDOM) {
   module.exports = {
